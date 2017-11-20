@@ -11,6 +11,12 @@
 
     <home></home>
 
+    <restaurantesL></restaurantesL>
+
+    <restaurantesT></restaurantesT>
+
+    <contacto></contacto>
+
   </div>
 </template>
 
