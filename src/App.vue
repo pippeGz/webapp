@@ -9,13 +9,7 @@
       <li><a href="https://twitter.com/vuejs" target="_blank">Contacto</a></li>
     </ul>
 
-    <home></home>
-
-    <restaurantesL></restaurantesL>
-
-    <restaurantesT></restaurantesT>
-
-    <contacto></contacto>
+    <router-view></router-view>
 
   </div>
 </template>
