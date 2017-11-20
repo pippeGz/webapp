@@ -9,6 +9,8 @@ import Contacto from './Contacto.vue'
 Vue.use(VueRouter);
 
 const routes =[
+  {path:'/restaurante/:id',name:'restaurante',component:RestTop},
+  {path:'/editar-restaurante/:id',name:'editar-restaurante',component:RestTop},
   {path:'/restaurantes',component:RestList},
   {path:'/restaurante-destacado/:id',name:'restaurante-destacado',component:RestTop},
   {path:'/contacto',component:Contacto},

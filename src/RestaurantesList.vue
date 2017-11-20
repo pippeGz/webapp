@@ -1,11 +1,15 @@
 <template>
     <div>
-      <ul id="restaurantesL">
+      <ul id="restaurantesL" v-if="restaurantes != null">
         <li v-for="restaurante in restaurantes">
           <strong>{{restaurante.title}}</strong>
-          </li> 
+          <p>
+            <router-link :to="{name: 'restaurante', params:{id: restaurante.id}}">Ver</router-link>
+            <router-link :to="{name: 'editar-restaurante', params:{id: restaurante.id}}">Editar</router-link>
+          </p>
+        </li> 
       </ul>
-      <!-- <span v-else>Cargando restaurantes...</span> -->
+      <span v-else>Cargando restaurantes...</span>
     </div>
 </template>
 
@@ -34,3 +38,17 @@ export default {
 }
 </script>
 
+<style lang="scss">
+  #restaurantesL{
+    padding: 5px;
+		li{
+			margin-top: 10px;
+			width: 30%;
+			height: 120px;
+			border: 1px solid #ddd;
+			background: #eee;
+			padding: 20px;
+			overflow:hidden;
+		}
+  }
+</style>
