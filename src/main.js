@@ -6,10 +6,12 @@ import RestList from './RestaurantesList.vue'
 import RestTop from './RestaurantesTop.vue'
 import Contacto from './Contacto.vue'
 import Restaurante from './Restaurante.vue'
+import RestauranteAdd from './RestauranteAdd.vue'
 
 Vue.use(VueRouter);
 
 const routes =[
+  {path:'/crear-restaurante',name:'crear-restaurante',component:RestauranteAdd},
   {path:'/restaurante/:id',name:'restaurante',component:Restaurante},
   {path:'/editar-restaurante/:id',name:'editar-restaurante',component:RestTop},
   {path:'/restaurantes',component:RestList},
